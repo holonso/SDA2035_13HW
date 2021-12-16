@@ -44,7 +44,7 @@ namespace SDA2035_13HW
             Console.WriteLine("Высота здания: {0}", Height);
         }
     }
-    public class MultiBuilding : Building
+    public sealed class MultiBuilding : Building
     {
         public int Floor { get; set; }
         public MultiBuilding(string loc, int length, int width, int height, int floor)
